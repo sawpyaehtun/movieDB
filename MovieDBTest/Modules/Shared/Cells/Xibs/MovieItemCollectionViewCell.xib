@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieItemCollectionViewCell" customModule="MovieDBTest" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AqM-TN-mVC" customClass="MovieItemCollectionViewCell" customModule="MovieDBTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="276"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="276"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQQ-CV-vAd">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="276"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.down.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="neb-v1-zCj">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="276"/>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="neb-v1-zCj" firstAttribute="top" secondItem="SQQ-CV-vAd" secondAttribute="top" id="AjN-kM-NaD"/>
+                            <constraint firstAttribute="trailing" secondItem="neb-v1-zCj" secondAttribute="trailing" id="CK8-7k-Iw7"/>
+                            <constraint firstItem="neb-v1-zCj" firstAttribute="leading" secondItem="SQQ-CV-vAd" secondAttribute="leading" id="Sfj-ev-Boj"/>
+                            <constraint firstAttribute="bottom" secondItem="neb-v1-zCj" secondAttribute="bottom" id="T0f-qV-1PF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="aC4-UW-GwW"/>
+            <constraints>
+                <constraint firstItem="SQQ-CV-vAd" firstAttribute="leading" secondItem="AqM-TN-mVC" secondAttribute="leading" id="BAh-cS-33a"/>
+                <constraint firstAttribute="trailing" secondItem="SQQ-CV-vAd" secondAttribute="trailing" id="bOZ-MN-0Yb"/>
+                <constraint firstAttribute="bottom" secondItem="SQQ-CV-vAd" secondAttribute="bottom" id="ray-de-Yqx"/>
+                <constraint firstItem="SQQ-CV-vAd" firstAttribute="top" secondItem="AqM-TN-mVC" secondAttribute="top" id="yL1-J2-qqC"/>
+            </constraints>
+            <size key="customSize" width="200" height="276"/>
+            <connections>
+                <outlet property="imageViewMoviePoster" destination="neb-v1-zCj" id="Qva-Za-TCM"/>
+            </connections>
+            <point key="canvasLocation" x="246.37681159420291" y="212.27678571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="square.and.arrow.down.fill" catalog="system" width="121" height="128"/>
+    </resources>
+</document>
